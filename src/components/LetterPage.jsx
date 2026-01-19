@@ -40,8 +40,8 @@ export default function LetterPage() {
                     animate={{ rotateY: isOpen ? 180 : 0 }}
                     transition={{ duration: 1, type: "spring", stiffness: 50 }}
                     style={{
-                        width: '350px',
-                        height: '550px', // Made slightly taller for photo
+                        width: 'min(350px, 90vw)',
+                        height: 'min(550px, 80vh)',
                         position: 'relative',
                         transformStyle: 'preserve-3d',
                     }}
@@ -87,7 +87,7 @@ export default function LetterPage() {
                         {/* Photo Placeholder */}
                         <div style={{
                             width: '100%',
-                            height: '240px',
+                            height: 'min(240px, 30vh)',
                             background: '#fff',
                             borderRadius: '15px',
                             marginBottom: '15px',
